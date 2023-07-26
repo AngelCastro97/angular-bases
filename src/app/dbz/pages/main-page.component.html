@@ -1,0 +1,14 @@
+<h1>DBZ Main Page</h1>
+<hr>
+
+<div class="row p-4">
+  <div class="col-12 col-lg-6 mb-4">
+    <dbz-list
+      [characterList]="characters"
+      (onDelete)="onDeleteCharacter($event)"
+    ></dbz-list>
+  </div>
+  <div class="col-12 col-lg-6">
+    <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
+  </div>
+</div>
